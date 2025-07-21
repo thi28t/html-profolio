@@ -8,88 +8,215 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
 <style>
+    main{display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-weight: bold;
+        color: #f1faee;
+        margin-bottom: 50px;
+        gap: 100px;
+        border:#264653 solid 2px;
+        border-radius: 20px;
+        padding: 20px;
+    }
+    main a{
+        color: #f1faee;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+    }
     body{
-        background-color:#EBE8DB ;}
-    .education{
+        background-color:#e63946;}
+    body>*{color: #264653;
+        font-family: 'Lato', sans-serif;
+        margin: 0;
+        padding: 20px;
+        gap: 10px;
+    }
+    h1{
+        font-family: 'Lato', sans-serif;
+        color:#f1faee;
+        font-size: 36px; 
+        text-align: center;
+        padding: 20px;
+    }
+    .maincontainer{
+        margin-top: 50px;
+        display: inline-block;
+        gap: 20px;
+    }
+        
+    .aboutme{
+        font-family: 'Lato', sans-serif;
+        padding: 20px;
+        font-size: 18px;
+    }
+    .profile{
+        font-family: 'Tangerine', cursive;
+         background-color: #a8dadc;
+  border-radius: 20px;
+}
+    
+    .education{ padding: 20px;
+        font-size: 18px;
+        background-color: #a8dadc;
+        border-radius: 20px;
+        padding-left: 20px;
 
     }
-    .skills{
+    .skills{display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        font-size: 18px;
+        background-color: #a8dadc;
+        border-radius: 20px;
+        margin-top: 30px;
+        text-align: center;
 
+    }
+    .skills ol{
+        text-align: center;
+        align-items: center;
+        list-style-type: none;
+        padding-left: 0;
+    }
+    .footer{display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-weight: bold;
+        color: #f1faee;
+        margin-bottom: 50px;
+        gap: 100px;
+        border:#264653 solid 2px;
+        border-radius: 20px;
+
+    }
+    footer a{
+        color: #f1faee;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
     }
     .project{
-
+        display: flex;
+        padding: 20px;
+        font-size: 18px;
+        background-color: #a8dadc;
+        border-radius: 20px;
+        align-items: center; 
+    margin-bottom: 100px;}
+    .project>*{
+        color: #264653;
+        text-decoration: none;
     }
-    .footer{font-size: 20px;
-        font-weight: bold;
-        color: 
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;}
+.container1 {
+  display: flex;
+  gap: 40px
+;
+}
 
-    }    
 </style>
 </head>
 <body>
-    <div class="profile"><h1>Htet Myat Tun</h1>
-    <p style="font-size: 18px;">Junior Web Developer.</p>
-    <h2 style="font-size:25px;">About Me</h2>
-    <p>I am a highly curious and motivated individual with a passion for continuous learning and personal growth. 
-    <p>My interests span both the sciences and the arts, reflecting a balanced and creative approach to problem-solving.</p> 
-    <p>I thrive in dynamic environments, enjoy engaging with new people, and value collaboration, empathy, and positivity in both personal and professional settings.</p>
-    <p>I approach life and work with enthusiasm, viewing every opportunity as a chance to learn, contribute, and grow.</p></div></div>
+    <main class="navbar">
+        <a href="#aboutme" style="font-size: 20px;">About Me</a>
+        <a href="./public/contact.html" style="font-size: 20px;">Contact Me</a>
+        <a href="#projects" style="font-size: 20px;">My Projects</a>
 
-    <div class="container">
-    <div class="education"><h2>Education</h2>
-    <ol>
-        <li>Bachelor of Law
-            <ul>
-                <li>University of Yangon</li>
-                <li>Graduated in (2018-2022)</li>
-            </ul>
-        </li>
-        <li>Bachelor's Degree in Computer Science
-            <ul>
-                <li>Rangsit International College</li>
-                <li>(2022-2026)</li>
-            </ul>
-        </li>
-        <li>Web Development Bootcamp
-            <ul>
-                <li>App Brewery</li>
-                <li>(2025)</li>
-            </ul>
-    </ol></div>
-    <div class="skills"><h2>My Skills</h2>
-    <ol>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React</li>
-        <li>Node.js</li>
-        <li>Express.js</li>
-    </ol>
-    <h2>Languages</h2>
-    <ol>
-        <li>English(upper-intermediate)</li>
-        <li>Myanmar(Native)</li>
-    </ol></div>
-    <h2>Expertise</h2>
-    <ol>
-        <li>Web Development</li>
-        <li>Responsive Design</li>
-        <li>Front-end Development</li>
-        <li>Back-end Development</li>
-        <li>Database Management</li>
-    </ol>
-    <div class="project"><h2>All My Projects links here</h2>
-    <ol>
-
-    <ul><h3><a href="./public/birthday-invite.html">Birthday Invitation</a></h3>
-    <img src="./assets/images/birthday-invite.png" alt="Birthday Cake" height="200"  /></ul>
-    <ul><h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
-    <img src="./assets/images/movie-ranking.png" alt="Movie Ranking Project" height="200" /><ul>
-    <ul><h3> <a href="./public/qutos.html" style="font-size:20px;">Quotes</a></h3><ul>
-    </ol>
+    </main>
+    <div class="maincontainer">
+    <div class="container1">
+        <div class="profile"id="aboutme">
+            <h1>Htet Myat Tun</h1>
+            <p style="font-family: 'Lato', sans-serif;padding: 20px; font-size: 18px; text-align: center; text-transform: uppercase; font-weight: bold; text-align: center;">Junior Web Developer</p>
+            <div class="aboutme">
+                <h2>About Me</h2>
+                <p style="text-align: justify; text-justify: inter-word;">I am a highly curious and motivated individual with a passion for continuous learning and personal growth. 
+                My interests span both the sciences and the arts, reflecting a balanced and creative approach to problem-solving. 
+                I thrive in dynamic environments, enjoy engaging with new people, and value collaboration, empathy, and positivity in both personal and professional settings.
+                I approach life and work with enthusiasm, viewing every opportunity as a chance to learn, contribute, and grow.</p>
             </div>
-</div>
-    <hr />
-</body>
+        </div>
+    </div>
+    <div class="container">
+        <div class="education">
+            <h2>Education</h2>
+            <ol>
+                <li>Bachelor of Law
+                    <ul>
+                        <li>University of Yangon</li>
+                        <li>Graduated in (2018-2022)</li>
+                    </ul>
+                </li>
+                <li>Bachelor's Degree in Computer Science
+                    <ul>
+                        <li>Rangsit International College</li>
+                        <li>(2022-2026)</li>
+                    </ul>
+                </li>
+                <li>Web Development Bootcamp
+                    <ul>
+                        <li>App Brewery</li>
+                        <li>(2025)</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+
+        <div class="skills">
+            <div class="myskills"><h2>My Skills</h2>
+            <ol>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+            </ol></div>
+            <div class="mylanguages"><h2>Languages</h2>
+            <ol>
+                <li>English (upper-intermediate)</li>
+                <li>Myanmar (Native)</li>
+            </ol></div>
+        </div>
+
+        <div class="expertise">
+            <h2>Expertise</h2>
+            <ol>
+                <li>Web Development</li>
+                <li>Responsive Design</li>
+                <li>Front-end Development</li>
+                <li>Back-end Development</li>
+                <li>Database Management</li>
+            </ol>
+        </div>
+    </div></div>
+        <div class="project" id="projects">
+            <h2>All My Projects links here</h2>
+            <ol>
+                <li>
+                    <h3><a href="./public/birthday-invite.html">Birthday Invitation</a></h3>
+                    <img style="border: #264653; border-style: solid; border-radius: 10px; height: 250px; width: 250px;" src="./assets/images/birthday-invite.png" alt="Birthday Cake" />
+                </li>
+                <li>
+                    <h3><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
+                    <img style="border: #264653; border-style: solid; border-radius: 10px; height: 250px; width: 250px;" src="./assets/images/movie-ranking.png" alt="Movie Ranking Project" />
+                </li>
+                <li>
+                    <h3><a href="./public/qutos.html" style="font-size:20px;">Quotes</a></h3>
+                </li>
+            </ol>
+        </div>
+    <footer class="footer">
+        <a href="#aboutme" style="font-size: 20px;">About Me</a>
+        <a href="./public/contact.html" style="font-size: 20px;">Contact Me</a>
+        <a href="#projects" style="font-size: 20px;">My Projects</a>
+    </footer>
 </html>
