@@ -2,3 +2,4 @@
 theme: jekyll-theme-minimal
 # _config.yml
 remote_theme: pages-themes/cayman
+show_downloads: true
