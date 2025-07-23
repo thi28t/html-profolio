@@ -108,6 +108,7 @@ body {
 
 
 .education, .skills, .expertise {
+  color: #264653;
   background-color: #a8dadc;
   border-radius: 20px;
   padding: 30px;
@@ -139,12 +140,16 @@ body {
 }
 
 .project {
-  background-color: #a8dadc;
-  border-radius: 20px;
-  padding: 30px;
-  margin-top: 40px;
-  text-align: center;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    background-color: #2a9d8f;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 950px;
+    width: 90%;
 }
 .project img {
   border: 2px solid #264653;
@@ -155,7 +160,8 @@ body {
   object-fit: cover;
   margin-top: 10px;
   transition: transform 0.3s ease;
-  display: block;
+  display: flex;
+    justify-content: left;
 }
 
 .project li {
@@ -179,7 +185,9 @@ body {
 .footer {
   background-color: #264653;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
+  align-content: flex-start;
   gap: 50px;
   padding: 30px 0;
   font-size: 18px;
