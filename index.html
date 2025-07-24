@@ -15,15 +15,20 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
 </head>
+<header>
+  <nav class="navbar">
+    <div class="logo">Htet Myat Tun</div>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#aboutme">About Me</a></li>
+      <li><a href="./public/contact.html">Contact Me</a></li>
+      <li><a href="#projects">My Projects</a></li>
+    </ul>
+  </nav>
+  <div style="margin-bottom: 40px;" class="empty-div"></div>
+</header>
 <body>
-    <main class="navbar">
-        <a href="#aboutme" style="font-size: 20px;">About Me</a>
-        <a href="./public/contact.html" style="font-size: 20px;">Contact Me</a>
-        <a href="#projects" style="font-size: 20px;">My Projects</a>
-
-    </main>
-    <div class="block">
-    </div>
+    <div style="margin-bottom: 40px;" class="block"></div>
 <div class="maincontainer">
     <div class="container1">
         <div class="profile"id="aboutme">
@@ -108,3 +113,13 @@
     </footer>
 </body>
 </html>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+  });
+</script>
+
+

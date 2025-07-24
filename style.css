@@ -1,3 +1,91 @@
+
+  .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background-color: rgba(38, 70, 83, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  width: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #f1faee;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #f1faee;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #e9c46a;
+}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  color: #f1faee;
+  cursor: pointer;
+}
+
+.navbar a {
+  color: #f1faee;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 60px; 
+    left: 0;
+    right: 0;
+    background-color: #264653;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 15px 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
+  background-color: #264653;
+  color: #f1faee;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,17 +99,8 @@ body {
   line-height: 1.6;
 }
 
-.navbar {
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: rgba(38, 70, 83, 0.9);
-  display: flex;
-  justify-content: space-around;
-  gap: 50px;
-  padding: 15px 0;
-  font-size: 18px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+html {
+  scroll-behavior: smooth;
 }
 
 .navbar a, .footer a {
@@ -40,12 +119,19 @@ body {
   width: 80%;
   border-radius: 10px;
 }
+.empty-div{
+   height: 10px;
+ 
+  margin: 40px auto;
+  width: 80%;
+  border-radius: 10px;
+}
 
 
 .maincontainer {
   max-width: 1000px;
   margin: 10px auto 10px auto;
-  padding: 50px 50px 50px 50px;
+  padding: 20px 20px 20px 20px;
 }
 
 .profile {
@@ -94,7 +180,7 @@ body {
 .education-container, .project {
   max-width: 800px;
   margin: 50px auto;
-  padding: 30px;
+  padding: 30px ;
   background-color: #a8dadc;
   border-radius: 20px;
   box-shadow: 0 10px 20px #449194;
@@ -102,12 +188,13 @@ body {
 }
 .education,.skills,.expertise,.mylanguages {
   max-width: 800px;
-  margin: 20px auto 20px auto;
-  padding: 20px;
+  margin: 10px auto 10px auto;
+  padding: 30px 30px 30px 30px;
   background-color: #264653;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   color: #f1faee;
+  gap: 40px;
 }
 .education h2, .skills h2, .expertise h2, .mylanguages h2 {
   font-size: 28px;
