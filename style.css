@@ -223,6 +223,18 @@ html {
   margin-bottom: 20px;
   color: #f1faee;
 }
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.projecttitle {
+  text-align: center;
+  grid-column: 1 / -1;
+  grid-row: 1;
+  margin-bottom: 20px;
+  color: rgb(246, 249, 252);
+}
 
 .project img {
   border: 2px solid #264653;
