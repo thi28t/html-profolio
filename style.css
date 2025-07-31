@@ -149,7 +149,7 @@ html {
 }
 
 .profile {
-  background-color: #264653;
+  background-color: #4c4c4c;
   border-radius: 20px;
   padding: 30px;
   text-align: center;
@@ -166,6 +166,14 @@ html {
   text-transform: uppercase;
   font-weight: bold;
   color: #f1faee;
+}
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f1faee;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .aboutme {
@@ -195,7 +203,7 @@ html {
   max-width: 800px;
   margin: 50px auto;
   padding: 30px ;
-  background-color: #a8dadc73;
+  background-color: #77878d;
   border-radius: 20px;
   box-shadow: 0 10px 20px #4491940e;
   color: #f1faee;
@@ -204,7 +212,7 @@ html {
   max-width: 800px;
   margin: 10px auto 10px auto;
   padding: 30px 30px 30px 30px;
-  background-color: #264653;
+  background-color: #4c4c4c;
   border-radius: 20px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   color: #f1faee;
@@ -231,7 +239,7 @@ html {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #a8dadc70;
+  background-color: #77878d;
   border-radius: 20px;
   box-shadow: 0 10px 20px #326c6e5d;
   margin-bottom: 20px;
