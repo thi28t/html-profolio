@@ -8,39 +8,51 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./index.css">
 </head>
-
-<body class="d-flex h-100 text-center text-white bg-dark">
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">Htet Myat Tun</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-        <a class="nav-link" href="#">Projects</a>
-        <a class="nav-link" href="./contact.html">Contact</a>
-      </nav>
-    </div>
-    <div class="container col-xxl-8 px-4 py-5">
-    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="../assets/images/profile_photo.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="900" height="600" loading="lazy">
-      </div>
-      <div class="col-lg-6">
-        <h1 class="display-5 fw-bold lh-1 mb-3">Responsive left-aligned hero with image</h1>
-        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+<style>
+.nav {
+    --bs-nav-link-padding-x: 1rem;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color:  #93abcf(--bs-link-color);
+    --bs-nav-link-hover-color: #646f7e(--bs-link-hover-color);
+    --bs-nav-link-disabled-color: rgb(33 37 41 / 75%)(--bs-secondary-color);
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+</style>
+<body>
+    <section id="title">
+    <div class="container"> 
+        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 "> 
+            <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"> 
+                 <span class="fs-4 text-white">Htet Myat Tun</span> </a> 
+                <ul class="nav nav-pills"> 
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                         <li class="nav-item"><a href="#" class="nav-link">Features</a></li> 
+                         <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+                          <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li> 
+                          <li class="nav-item"><a href="./contact.html" class="nav-link">Contact</a></li>
+                         </ul> 
+                        </header>
+                    </div>
+                </section>
+                 <div class="container"> 
+                    <section id="about">
+    <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="500x500" style="width: 500px; height: 400px;" src="../assets/images/profile_photo.jpg" data-holder-rendered="true">
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-  </header>
-
-  
-
-  
+    </section>
+    <hr class="featurette-divider">
 </div>
 
 
